@@ -63,7 +63,7 @@ template
 [npm-downloads-src]: https://img.shields.io/npm/dm/@jeng3zeus/form-piw-piw.svg?style=flat&colorA=020420&colorB=00DC82
 [npm-downloads-href]: https://www.npmjs.com/package/@jeng3zeus/form-piw-piw
 
-[license-src]: https://img.shields.io/github/license/JENGZY-devBoi/Form-piw-piw.svg?style=flat&colorA=020420&colorB=00DC82
+[license-src]: https://img.shields.io/github/license/JENGZY-devBoi/jengzeus-form-piw-piw.svg?style=flat&colorA=020420&colorB=00DC82
 [license-href]: https://github.com/JENGZY-devBoi/jengzeus-form-piw-piw/blob/main/LICENSE
 
 [documents-href]: https://google.com
