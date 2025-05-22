@@ -26,6 +26,8 @@ Join with my pound with the 1st Library released  [Documents][documents-href]�
 script
 ```ts
 <script>
+import { z } from 'zod';
+
 const schema = z.object({
     username: z.string().min(1, { message: 'กรุณากรอกชื่อของคุณ' })
 });
