@@ -13,7 +13,7 @@ npm i @jeng3zeus/form-piw-piw
 ```ts
 // nuxt.config.ts
 {
-  module: ['@jeng3zeus/form-piw-piw']
+  modules: ['@jeng3zeus/form-piw-piw']
 }
 ```
 
