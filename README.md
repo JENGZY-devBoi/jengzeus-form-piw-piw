@@ -1,85 +1,69 @@
-<!--
-Get your module up and running quickly.
+# Form piw piw ⚡️ - Validate your nuxt with zod schema 🏄‍♀️🪿
 
-Find and replace all on all files (CMD+SHIFT+F):
-- Name: My Module
-- Package name: my-module
-- Description: My new Nuxt module
--->
-
-# My Module
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![License][license-src]][license-href]
-[![Nuxt][nuxt-src]][nuxt-href]
 
-My new Nuxt module for doing amazing things.
-
-- [✨ &nbsp;Release Notes](/CHANGELOG.md)
-<!-- - [🏀 Online playground](https://stackblitz.com/github/your-org/my-module?file=playground%2Fapp.vue) -->
-<!-- - [📖 &nbsp;Documentation](https://example.com) -->
-
-## Features
-
-<!-- Highlight some of the features your module provide here -->
-- ⛰ &nbsp;Foo
-- 🚠 &nbsp;Bar
-- 🌲 &nbsp;Baz
-
-## Quick Setup
-
-Install the module to your Nuxt application with one command:
-
+## Install for nuxt3
 ```bash
-npx nuxi module add my-module
+npm i @jeng3zeus/form-piw-piw
 ```
 
-That's it! You can now use My Module in your Nuxt app ✨
+Join with my pound with the 1st Library released  [Documents][documents-href]🐣
 
 
-## Contribution
+## Features
+- Form to validate child element
+- Validate data with Zod
+- Use Vue reactive for form data
+- Validate with custom input using Vue provide
+- Having a feature trigger with on blur validate (No focus)
 
-<details>
-  <summary>Local development</summary>
-  
-  ```bash
-  # Install dependencies
-  npm install
-  
-  # Generate type stubs
-  npm run dev:prepare
-  
-  # Develop with the playground
-  npm run dev
-  
-  # Build the playground
-  npm run dev:build
-  
-  # Run ESLint
-  npm run lint
-  
-  # Run Vitest
-  npm run test
-  npm run test:watch
-  
-  # Release new version
-  npm run release
-  ```
 
-</details>
+
+## Example
+script
+```ts
+<script>
+const schema = z.object({
+    username: z.string().min(1, { message: 'กรุณากรอกชื่อของคุณ' })
+});
+
+const formData = reactive({
+  username: ''
+});
+</script>
+```
+
+template
+```vue
+<JForm
+    v-slot="{ errors }"
+    name="login"
+    :form="formData"
+    :schema="schema"
+    @submit="handleSubmit"
+    @reset="handleReset"
+>
+    <input 
+        v-model="formData.username"
+        name="username" 
+        placeholder="username"
+    />
+    <p style="color: red;">{{ errors.username }}</p>
+</JForm>
+```
 
 
 <!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/v/my-module/latest.svg?style=flat&colorA=020420&colorB=00DC82
-[npm-version-href]: https://npmjs.com/package/my-module
+[npm-version-src]: https://img.shields.io/npm/v/@jeng3zeus/jengzeus-ui/latest.svg?style=flat&colorA=020420&colorB=00DC82
+[npm-version-href]: https://www.npmjs.com/package/@jeng3zeus/form-piw-piw
 
-[npm-downloads-src]: https://img.shields.io/npm/dm/my-module.svg?style=flat&colorA=020420&colorB=00DC82
-[npm-downloads-href]: https://npm.chart.dev/my-module
+[npm-downloads-src]: https://img.shields.io/npm/dm/@jeng3zeus/jengzeus-ui.svg?style=flat&colorA=020420&colorB=00DC82
+[npm-downloads-href]: https://www.npmjs.com/package/@jeng3zeus/form-piw-piw
 
-[license-src]: https://img.shields.io/npm/l/my-module.svg?style=flat&colorA=020420&colorB=00DC82
-[license-href]: https://npmjs.com/package/my-module
+[license-src]: https://img.shields.io/github/license/JENGZY-devBoi/Jengzeus-ui.svg?style=flat&colorA=020420&colorB=00DC82
+[license-href]: https://github.com/JENGZY-devBoi/Jengzeus-ui/blob/main/LICENSE
 
-[nuxt-src]: https://img.shields.io/badge/Nuxt-020420?logo=nuxt.js
-[nuxt-href]: https://nuxt.com
-# jengzeus-form-piw-piw
+[documents-href]: https://google.com
