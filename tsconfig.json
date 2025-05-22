@@ -1,0 +1,20 @@
+{
+    "extends": "./.nuxt/tsconfig.json",
+    "exclude": [
+        "dist",
+        "node_modules",
+        "playground",
+        ".nuxt"
+    ],
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "esModuleInterop": true,
+        "strict": true,
+        "jsx": "preserve",
+        "types": [
+            "vite/client"
+        ]
+    }
+}
