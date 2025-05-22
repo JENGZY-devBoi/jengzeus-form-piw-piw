@@ -10,6 +10,11 @@
 npm i @jeng3zeus/form-piw-piw
 ```
 
+```ts
+// nuxt.config.ts
+module: ['@jeng3zeus/form-piw-piw']
+```
+
 Join with my pound with the 1st Library released  [Documents][documents-href]🐣
 
 
