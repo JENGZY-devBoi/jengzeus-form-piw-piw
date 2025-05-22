@@ -1,9 +1,9 @@
 # Form piw piw ⚡️ - Validate your nuxt with zod schema 🪿
-
-
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![License][license-src]][license-href]
+
+Join with my pound with the 1st Library released  [Documents][documents-href] 🐣
 
 ## Install for nuxt3
 ```bash
@@ -16,9 +16,6 @@ npm i @jeng3zeus/form-piw-piw
   modules: ['@jeng3zeus/form-piw-piw']
 }
 ```
-
-Join with my pound with the 1st Library released  [Documents][documents-href]🐣
-
 
 ## Features
 - Form to validate child element
