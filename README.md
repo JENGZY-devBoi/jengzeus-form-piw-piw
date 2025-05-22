@@ -57,13 +57,13 @@ template
 
 
 <!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/v/@jeng3zeus/jengzeus-ui/latest.svg?style=flat&colorA=020420&colorB=00DC82
+[npm-version-src]: https://img.shields.io/npm/v/@jeng3zeus/form-piw-piw/latest.svg?style=flat&colorA=020420&colorB=00DC82
 [npm-version-href]: https://www.npmjs.com/package/@jeng3zeus/form-piw-piw
 
-[npm-downloads-src]: https://img.shields.io/npm/dm/@jeng3zeus/jengzeus-ui.svg?style=flat&colorA=020420&colorB=00DC82
+[npm-downloads-src]: https://img.shields.io/npm/dm/@jeng3zeus/form-piw-piw.svg?style=flat&colorA=020420&colorB=00DC82
 [npm-downloads-href]: https://www.npmjs.com/package/@jeng3zeus/form-piw-piw
 
-[license-src]: https://img.shields.io/github/license/JENGZY-devBoi/Jengzeus-ui.svg?style=flat&colorA=020420&colorB=00DC82
-[license-href]: https://github.com/JENGZY-devBoi/Jengzeus-ui/blob/main/LICENSE
+[license-src]: https://img.shields.io/github/license/JENGZY-devBoi/Form-piw-piw.svg?style=flat&colorA=020420&colorB=00DC82
+[license-href]: https://github.com/JENGZY-devBoi/jengzeus-form-piw-piw/blob/main/LICENSE
 
 [documents-href]: https://google.com
