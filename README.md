@@ -3,7 +3,7 @@
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![License][license-src]][license-href]
 
-Join with my pound with the 1st Library released  [Documents][documents-href] 🐣
+Join with my pound with the 1st Library released  [Documentation][documents-href] 🐣
 
 ## Install for nuxt3
 ```bash
@@ -72,5 +72,5 @@ template
 [license-src]: https://img.shields.io/github/license/JENGZY-devBoi/jengzeus-form-piw-piw.svg?style=flat&colorA=020420&colorB=00DC82
 [license-href]: https://github.com/JENGZY-devBoi/jengzeus-form-piw-piw/blob/main/LICENSE
 
-[documents-href]: https://google.com
+[documents-href]: https://jengzeus-form-piw-piw-documentation.vercel.app/
 [zod-href]: https://zod.dev/
