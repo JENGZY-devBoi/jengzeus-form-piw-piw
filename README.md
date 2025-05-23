@@ -19,7 +19,7 @@ npm i @jeng3zeus/form-piw-piw
 
 ## Features
 - Form to validate child element
-- Validate data with Zod
+- Validate data with [Zod][zod-href]
 - Use Vue reactive for form data
 - Validate with custom input using Vue provide
 - Having a feature trigger with on blur validate (No focus)
@@ -73,3 +73,4 @@ template
 [license-href]: https://github.com/JENGZY-devBoi/jengzeus-form-piw-piw/blob/main/LICENSE
 
 [documents-href]: https://google.com
+[zod-href]: https://zod.dev/
