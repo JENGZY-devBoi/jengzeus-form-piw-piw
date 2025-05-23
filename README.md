@@ -30,7 +30,7 @@ npm i @jeng3zeus/form-piw-piw
 script
 ```ts
 <script>
-import { z } from 'zod';
+import { z } from '#jengzeus/zod';
 
 const schema = z.object({
     username: z.string().min(1, { message: 'กรุณากรอกชื่อของคุณ' })
