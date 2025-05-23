@@ -1,4 +1,4 @@
-# Form piw piw ⚡️ - Validate your nuxt with zod schema 🪿
+# Form piwx2 ⚡️ - Validate your nuxt with zod schema 🪿
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![License][license-src]][license-href]
