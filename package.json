@@ -1,8 +1,8 @@
 {
-  "name": "my-module",
-  "version": "1.0.0",
-  "description": "My new Nuxt module",
-  "repository": "your-org/my-module",
+  "name": "@jeng3zeus/form-piw-piw",
+  "version": "1.0.1",
+  "description": "Simply form validate for Nuxt3",
+  "repository": "https://github.com/JENGZY-devBoi/jengzeus-form-piw-piw",
   "license": "MIT",
   "type": "module",
   "exports": {

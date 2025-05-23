@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { reactive } from 'vue';
-import { z } from 'zod';
+import { z, ZodObject } from '#jengzeus/zod';
 
 const schema = z.object({
     username: z.string().min(1, { message: 'กรุณากรอกชื่อของคุณ' }),
