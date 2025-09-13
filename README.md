@@ -23,6 +23,7 @@ npm i @jeng3zeus/form-piw-piw
 - Use Vue reactive for form data
 - Validate with custom input using Vue provide
 - Having a feature trigger with on blur validate (No focus)
+- 🆕 Cool scroll
 
 
 

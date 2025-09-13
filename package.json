@@ -1,6 +1,6 @@
 {
   "name": "@jeng3zeus/form-piw-piw",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "homepage": "https://jengzeus-form-piw-piw-documentation.vercel.app/",
   "keywords": [
     "nuxt3",
@@ -9,6 +9,8 @@
     "zod",
     "vue3",
     "jform",
+    "form-piw-piw",
+    "form-piw-x2",
     "jengzeus",
     "jeng3zeus"
   ],

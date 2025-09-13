@@ -5,7 +5,7 @@ import { z, ZodObject } from '#jengzeus/zod';
 const schema = z.object({
     username: z.string().min(1, { message: 'กรุณากรอกชื่อของคุณ' }),
     password: z.string().min(8, { message: 'กรุณากรอก password ให้ครบ 8 ตัว' }),
-    accept: z.string({ message: 'กรุณาเลือกการยินยอมนะครับบบ' }),
+    accept: z.enum(['accept', 'no-accept']).refine(v => v === 'accept', { message: 'กรุณาเลือกการยินยอมนะครับบบ' }),
     age: z.coerce.number().min(1, { message: 'อย่าให้มีครั้งที่ 2' }).max(100, { message: 'ครั้งที่ 3 นี่ไม่ควร' }),
     document: z
         .any()
@@ -24,7 +24,7 @@ const formData = reactive<{
     username: '',
     password: '',
     accept: '',
-    age: 20,
+    age: -10,
     document: undefined,
     tags: []
 });
@@ -40,7 +40,7 @@ const formData2 = reactive<{
     username: '',
     password: '',
     accept: '',
-    age: 20,
+    age: -10,
     document: undefined,
     tags: []
 });
@@ -55,7 +55,7 @@ const handleReset = () => {
     formData.username = '';
     formData.password = '';
     formData.accept = '';
-    formData.age = 1;
+    formData.age = -10;
     formData.document = undefined;
     formData.tags = [];
 };
@@ -72,13 +72,17 @@ const onFileChange = (e: Event) => {
 
 <template>
     <JForm
-        v-slot="{ errors }"
+        v-slot="{ errors, errorStatus }"
         name="login"
         :form="formData"
         :schema="schema"
+        cool-scroll
         @submit="handleSubmit"
         @reset="handleReset"
-    >
+    >   
+        {{ errors }}
+        {{ errorStatus }} <br />
+
         <input 
             v-model="formData.username"
             name="username" 
